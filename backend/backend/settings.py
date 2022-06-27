@@ -115,10 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'fr-fr'
 TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_TZ = False
+LANGUAGE_CODE = 'fr-fr'
+USE_I18N = USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
@@ -132,4 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # config host url
 
+CORS_ALLOW_ALL_ORIGINS = True
 HOST_URL = 'http://127.0.0.1:8000'
