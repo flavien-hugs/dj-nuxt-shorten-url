@@ -7,10 +7,13 @@
     <div class="flex items-center justify-center">
       <div class="w-8/12 flex flex-col justify-center items-center px-10">
         <!-- Form component -->
-        <Form @ShortenedLink='handleShortenedLink' />
-        
+        <Form @ShortenedLink='handleShortenedLink'/>
+
         <!-- Link component -->
-        <Link v-if='shortened_link'/>
+        <Link
+          v-if='shortened_link'
+          :shortened_link='shortened_link'
+        />
       </div>
     </div>
   </div>

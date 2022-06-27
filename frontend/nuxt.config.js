@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'shorten-url',
+    title: 'Shorten URL APP',
     htmlAttrs: {
       lang: 'fr'
     },
