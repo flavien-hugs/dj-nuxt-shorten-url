@@ -1,5 +1,6 @@
 # backend.backend.settings.py
 
+import os
 from pathlib import Path
 
 from dotenv import dotenv_values
@@ -16,11 +17,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = env.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-v-kgk7pa+g)rz=%-ute@7)4o%kz-+0l9epjof%!eknogz+mex1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = env.get('DEBUG')
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
@@ -129,12 +130,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# add this block below MIDDLEWARE
-
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-)
-
 # config host url
 
-HOST_URL='http://127.0.0.1:8000'
+HOST_URL = 'http://127.0.0.1:8000'
