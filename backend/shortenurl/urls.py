@@ -12,7 +12,7 @@ urlpatterns = [
         name='shortener_list'
     ),
     path(
-        route='edit/',
+        route='create/',
         view=views.shortener_api_createview,
         name='shortener_create'
     ),
