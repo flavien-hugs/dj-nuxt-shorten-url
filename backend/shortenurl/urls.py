@@ -16,4 +16,9 @@ urlpatterns = [
         view=views.shortener_api_createview,
         name='shortener_create'
     ),
+    path(
+        route='link/',
+        view=views.shortener_api_retrieveview,
+        name='shortener_link'
+    ),
 ]
