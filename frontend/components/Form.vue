@@ -22,7 +22,7 @@
           const formdata = new FormData()
           formdata.append('original_link', this.$data.url)
 
-          const res = await fetch('http://localhost:8000/api/create/', {
+          const res = await fetch('http://localhost:8000/api/edit/', {
             method: 'POST',
             body: formdata
           })
@@ -32,6 +32,7 @@
           }
 
           const data = await res.json()
+          console.log(data)
           this.$data.url = ''
 
           this.$emit('ShortenedLink', data['shortened_link'])
