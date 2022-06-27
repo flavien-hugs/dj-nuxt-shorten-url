@@ -1,7 +1,15 @@
 .vscode
+.idea/
+
 Pipfile.lock
 frontend/.nuxt
 frontend/node_modules
 frontend/package-lock.json
 
 .env
+backend/*.sqlite3
+backend/*.lock
+backend/Pipfile.lock
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
