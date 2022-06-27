@@ -3,3 +3,5 @@ Pipfile.lock
 frontend/.nuxt
 frontend/node_modules
 frontend/package-lock.json
+
+.env
