@@ -6,6 +6,9 @@ from string import ascii_letters
 from django.db import models
 
 
+NULL_AND_BLANK = {'null': True, 'blank': True}
+
+
 class Link(models.Model):
 
     original_link = models.URLField(
@@ -14,7 +17,8 @@ class Link(models.Model):
     )
     shortened_link = models.URLField(
         verbose_name="original link",
-        max_length=200
+        max_length=200,
+        **NULL_AND_BLANK
     )
     created_date = models.DateField(
         verbose_name="created date",
